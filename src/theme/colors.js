@@ -17,6 +17,7 @@ export default {
     textAltLight: "#ffffff",
 
     shadow: "#e5e5e5",
+    border: "transparent",
 
-    background: "#FFFFFF",
+    background: "#FFFF",
 }

@@ -1,22 +1,25 @@
-import  Button  from "../../components/Buttons/Button"
-import { Container, Title, ButtonView, BtView, TopContainer, Image } from "./style"
+import { Container, Title,  TopContainer, Image, CButton } from "./style"
+import { View } from "react-native"
 
 
 export default function Welcome({ navigation }) {
 
     return (
+    
         <Container>
-            <Image source={require('../../../assets/logoBids.png')}/>
+        
             <TopContainer>
+                <Image source={require('../../../assets/logoBids.png')}/>
                 <Title>Bem-Vindo(a)!</Title>
             </TopContainer>
             
-            <BtView>
-                <ButtonView>
-                    <Button title="Fazer Login" onPress={() => navigation.navigate("Login")} icon="log-in-outline" />
-                    <Button title="Cadastrar" onPress={() => navigation.navigate("Register")} />
-                </ButtonView>
-            </BtView>
+           
+            <View> 
+            <CButton title="Fazer Login" onPress={() => navigation.navigate("Login")} icon="log-in-outline" />
+            <CButton title="Cadastrar" onPress={() => navigation.navigate("Register")} />
+            </View>  
+           
         </Container>
+      
     )
 }

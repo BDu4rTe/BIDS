@@ -3,6 +3,7 @@ import Home from "../../screens/Home"
 import Profile from "../../screens/Profile"
 import Camera from "../../screens/Camera"
 import {Ionicons} from "@expo/vector-icons"
+import { useTheme } from "styled-components/native";
 
 
 // const HomeStack = createNativeStackNavigator()
@@ -32,6 +33,7 @@ import {Ionicons} from "@expo/vector-icons"
 const TabNavigator = createBottomTabNavigator()
 // caso fosse usar as stack`s o componente seria a func acima
 export default function AuthStack (){
+    const theme= useTheme()
     return (
         <TabNavigator.Navigator initialRouteName="Home" 
         screenOptions={({ route }) => ({
@@ -49,11 +51,16 @@ export default function AuthStack (){
               return <Ionicons name={iconName} size={size} color={color} />;
               
             },
+              tabBarActiveTintColor:theme.colors.textAltLight,
+              tabBarInactiveTintColor: theme.colors.primaryShadow,
+              
               "tabBarStyle": [
                 {
                   tabBarPosition: "bottom",
-                  borderRadius: 15,
-                  height: 70, 
+                  borderTopLeftRadius: 15,
+                  borderTopRightRadius: 15,
+                  height: 70,
+                  backgroundColor: theme.colors.primary, 
                 },  
               ]
             

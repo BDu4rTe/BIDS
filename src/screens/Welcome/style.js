@@ -1,8 +1,14 @@
 import styled from "styled-components/native"
 import { Text } from "../../components/Text"
+import Button from "../../components/Buttons/Button"
+
 
 export const Container = styled.View`
     flex: 1;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    padding: ${props => props.theme.metrics.padding}
 `
 
 export const Title = styled.Text`
@@ -12,28 +18,18 @@ export const Title = styled.Text`
     margin-bottom: ${props => props.theme.metrics.padding};
     color: ${props => props.theme.colors.text};
 `
-export const ButtonView = styled.View`
-    height: 40%;
-    justify-content: space-between;
-    flex-direction: column;
-    padding: 0 ${props => props.theme.metrics.padding} 0 ${props => props.theme.metrics.padding};
-`
-export const BtView = styled.View`
-    height: 50%;
-    padding: 0 ${props => props.theme.metrics.padding} 0 ${props => props.theme.metrics.padding};
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-`
+
 export const TopContainer = styled.View`
-    height: 50%;
-    padding: 0 ${props => props.theme.metrics.padding} 0 ${props => props.theme.metrics.padding};
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-`
-export const Image = styled.Image`
     width: 100%;
-    height: 100%;
-    flex:1;
+`
+export const Image = styled.Image.attrs(()=> ({resizeMode: "contain"}))`
+    width: 100%;
+    height: 189px;
+`
+
+export const CButton = styled(Button)`
+    margin-bottom: ${props => props.theme.metrics.padding};
+
 `
