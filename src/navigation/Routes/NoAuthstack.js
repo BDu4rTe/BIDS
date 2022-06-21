@@ -8,7 +8,7 @@ const StackNavigator = createNativeStackNavigator()
 
 export default function NoAuthSatck(){
     return (
-        <StackNavigator.Navigator initialRouteName="Login">
+        <StackNavigator.Navigator initialRouteName="Welcome">
             <StackNavigator.Screen name="Welcome" component={Welcome} options={{headerShown:false}} />
             <StackNavigator.Screen name="Login" component={Login} />
             <StackNavigator.Screen name="Register" component={Register} />

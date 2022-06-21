@@ -1,12 +1,14 @@
+import { Container, Form, Image, } from "./style"
 import Button from "../../components/Buttons/Button"
+import TextInput from "../../components/Input"
 import { useState } from "react"
 import { signInWithEmailAndPassword } from "firebase/auth"
 import { auth } from "../../config/firebase"
 
 export default function Login(){
     const [input, setInput] = useState({
-        email: "teste@teste.com",
-        password: "123456",
+        email: "",
+        password: "",
     })
 
     async function logIn() {
@@ -33,7 +35,15 @@ export default function Login(){
     }
 
     return (
+        <Container>
 
-        <Button onPress={()=>logIn()}  title="Login" icon="log-in-outline"/>
+            <Form>
+                <TextInput type="email" icon="mail-outline" placeholder="Insira seu email" returnKeyType="next" value={input.email} onChangeText={text => setInput({ ...input, email: text })} />
+                <TextInput type="password" icon="lock-closed-outline" placeholder="Insira sua senha" returnKeyType="done" value={input.password} onChangeText={text => setInput({ ...input, password: text })} />
+
+                <Button onPress={()=>logIn()}  title="Login" icon="log-in-outline"/>
+            </Form>
+        
+        </Container>
     )
 }

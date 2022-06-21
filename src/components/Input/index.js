@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 
-import { Button, Container, Icon, Input, ButtonIcon } from "./styles.js"
+import { Button, Container, Icon, Input, ButtonIcon } from "./style.js"
 
 export default function TextInput(props) {
     const [passVisibility, setPassVisibility] = useState({ icon: "eye-outline", hidePassword: true })
