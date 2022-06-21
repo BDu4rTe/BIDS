@@ -26,7 +26,8 @@ export default {
         height: "160px",
         borderBottomWidth: "4px",
         borderRadius: "25px",
-        imageSize: "64px"
+        imageSize: "64px",
+        iconSize: "64px"
     },
     input: {
         height: "56px",

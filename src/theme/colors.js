@@ -1,6 +1,7 @@
 export default {
     primary: "#72BAAC",
     primaryShadow: "#568178",
+    secondary: "#A8BED3",
 
     success: "#25D366",
     successShadow: "#1EAE54",

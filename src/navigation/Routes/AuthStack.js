@@ -46,11 +46,18 @@ export default function AuthStack (){
               else if( route.name === 'Profile'){
                 iconName = focused ? 'ios-paw' : 'ios-paw-outline'
               }
-  
-              // You can return any component that you like here!
               return <Ionicons name={iconName} size={size} color={color} />;
-            }
-          })}
+              
+            },
+              "tabBarStyle": [
+                {
+                  tabBarPosition: "bottom",
+                  borderRadius: 15,
+                  height: 70, 
+                },  
+              ]
+            
+            })}
         >
             <TabNavigator.Screen name="Camera" component={Camera} options={{headerShown:false}}/> 
             <TabNavigator.Screen name="Home" component={Home} options={{headerShown:false}}/> 

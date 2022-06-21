@@ -3,6 +3,8 @@ import { Ionicons } from "@expo/vector-icons"
 import Text from "../../Text"
 
 export const Container = styled.TouchableOpacity`
+    margin-top:  ${props => props.theme.metrics.padding};
+    margin-bottom: ${props => props.theme.metrics.padding};
     width: ${props => props.theme.metrics.button.width};
     height: ${props => props.theme.metrics.button.height};
     flex-direction: ${props => props.inverted ? "row-reverse" : "row"};

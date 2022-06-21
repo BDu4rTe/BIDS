@@ -33,7 +33,7 @@ export const TopContainer = styled.View`
     justify-content: center;
 `
 export const Image = styled.Image`
-    width: 100%,
-    height: 100%,
-    flex:1
+    width: 100%;
+    height: 100%;
+    flex:1;
 `
