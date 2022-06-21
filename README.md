@@ -2,7 +2,7 @@
 <h1 align="center">
   BIDS
   <p><img src="assets/logoBids.png" width="350" heigth="auto"></p>
-  Um app para auxilar voce a cuidar da saude do seu pet
+  Um app para auxiliar você a cuidar da saúde do seu pet
 </h1>
 
 <p>
@@ -12,10 +12,11 @@
 
 # 🧾 》Introducao
 Esse projeto na verdade é um trabalho da faculdade, o objetivo era fazer um mvp para um aplicativo que ajudasse os donos de pets a identificar e tratar a obesidade,
-no nosso caso resolvemos deixar nixado apenas a cachorros.
+No nosso caso resolvemos deixar nichado apenas a cachorros.
+
 
 # 🧰 》Tecnologias usadas
-Para desenvolver o app foi usado o cunjuto basico de ferramentas, nada muito fora do comum.
+Para desenvolver o app foi usado o conjunto básico de ferramentas no desenvolvimento mobo, nada muito fora do comum.
 - React Native 
 - Node.js 
 - Expo 
