@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 
-import { auth } from "../../config/firebase"
+import { auth, firestore } from "../../config/firebase"
 import { createUserWithEmailAndPassword, updateProfile, sendEmailVerification, signInWithCredential, GoogleAuthProvider, FacebookAuthProvider } from "firebase/auth"
 import { setDoc, doc } from "firebase/firestore"
 import  TextInput  from "../../components/Input"
@@ -16,6 +16,17 @@ export default function Register() {
         password: "",
         confirmPassword: "",
     })
+
+    async function saveUserData(res) {
+        await setDoc(doc(firestore, "users", res.user.uid), {
+            name: input.nome,
+        }).then(() => {
+            updateProfile(res.user, { displayName: input.name })
+            sendEmailVerification(res.user)
+        }).catch((error) => {
+            console.log(error)
+        })
+    }
 
     async function signInWithEmailAndPass() {
         if (input.name === "" || input.email === "" || input.password === "" || input.confirmPassword === "") {

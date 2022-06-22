@@ -27,6 +27,7 @@ export default function Modal(props) {
                             <Icon name="close-circle-outline" />
                         </Button>
                     </Header>
+                    {props.children}
                 </ModalView>
             </Container>
         </RNModal>

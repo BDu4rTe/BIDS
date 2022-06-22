@@ -1,21 +1,25 @@
-import { Container, UserNameText, Header } from "./style"
+import { Container, UserNameText, Header, ModalContainer } from "./style"
 import { useSelector } from "react-redux"
 import PetContainer from "../../components/PetContainer"
 import ConsultaBtn from "../../components/Buttons/ConsultaBtn"
-import ModalConsultas from "../../components/Modal/ModalConsutas"
+import Modal from "../../components/Modal"
 import  TextInput  from "../../components/Input"
 import Text from "../../components/Text"
 import { useState } from "react"
+
+
 
 export default function Home(){
     const { user } = useSelector((state) => state.user)
     //console.log(user.pets.nome)
     const [modal, setModal] = useState({
         modalVisible: false,
-        alertModalVisible: false,
-        googleSignIn: false,
-        facebookSignIn: false,
         alertMessage: ""
+    })
+    const [input, setInput] = useState({
+        nome: "",
+        idade: "",
+        peso: "",
     })
 
     return (
@@ -29,13 +33,11 @@ export default function Home(){
              
             <ConsultaBtn title="Consultas" consulta="Voce nao tem consultas agendadas" onPress={() => setModal({ ...modal, modalVisible: true })} />
             <PetContainer title={(user.pets.nome)} idade={(user.pets.idade)} peso={(user.pets.peso)} imc={(user.pets.imc)} />
-
-            <ModalConsultas visible={modal.modalVisible} title="Cadastro da Criança" size="medium" closeAction={() => setModal({ ...modal, modalVisible: false })}>
-                <Text>Agendar consulta</Text>
-                <TextInput />
-                <TextInput />
-                <TextInput />
-            </ModalConsultas>
+            <Modal visible={modal.modalVisible} title="Consultas" size="medium" closeAction={() => setModal({ ...modal, modalVisible: false })}>
+                <ModalContainer>
+                    <Text>Voce nao possui consultas agendadas</Text>
+                </ModalContainer>
+            </Modal>
 
         </Container>
         </>

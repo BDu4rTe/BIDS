@@ -23,3 +23,9 @@ export const UserNameText = styled.Text`
     color: ${props => props.theme.colors.textAltLight}
 `
 
+export const ModalContainer = styled(Container)`
+    padding: 0;
+    align-items: center;
+    justify-content: space-evenly;
+`
+

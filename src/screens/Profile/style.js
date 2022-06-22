@@ -30,3 +30,8 @@ export const BtnView = styled.View`
     align-items: center;
     justify-content: center;
 `
+export const ModalContainer = styled(Container)`
+    padding: 0;
+    align-items: center;
+    justify-content: space-evenly;
+`

@@ -68,7 +68,7 @@ export default function AuthStack (){
         >
             <TabNavigator.Screen name="Camera" component={Camera} options={{headerShown:false}}/> 
             <TabNavigator.Screen name="Home" component={Home} options={{headerShown:false}}/> 
-            <TabNavigator.Screen name="Profile" component={Profile} options={{headerShown:false}}/>  
+            <TabNavigator.Screen name="Profile" component={Profile} options={{headerShown:false}}/>   
         </TabNavigator.Navigator>
     )
 }

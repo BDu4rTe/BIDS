@@ -10,7 +10,6 @@ export default function Welcome({ navigation }) {
         
             <TopContainer>
                 <Image source={require('../../../assets/logoBids.png')}/>
-                <Title>Bem-Vindo(a)!</Title>
             </TopContainer>
             
            

@@ -1,10 +1,10 @@
 import { Container, Header, Title, TextView } from "./style.js"
 import Text from "../../Text"
 
-export default function PetContainer(props) {
+export default function ConsultaBtn(props) {
 
     return (    
-    <Container>    
+    <Container {...props}>    
         <Header>
             <Title>{props.title}</Title>
         </Header>

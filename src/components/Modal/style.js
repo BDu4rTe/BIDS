@@ -1,5 +1,5 @@
 import styled from "styled-components/native"
-import Text from "../../Text"
+import Text from "../../components/Text"
 
 import { Ionicons } from "@expo/vector-icons"
 
