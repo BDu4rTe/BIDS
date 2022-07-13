@@ -8,7 +8,7 @@ export default function Camera(){
     return (
         <><Header>
         <UserNameText>Pet Scan</UserNameText>
-        <UserNameText>Lorem ipsum curabitur neque faucibus tellus ut nisi odio, rutrum quis tincidunt</UserNameText>
+        <UserNameText>Basta clicar nos botões abaixo para tirar as fotos do seu pet ou ver as fotos tiradas anteriormente</UserNameText>
         </Header>
         <Container>
 

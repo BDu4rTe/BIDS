@@ -15,7 +15,7 @@ export default function Welcome({ navigation }) {
            
             <View> 
             <CButton title="Fazer Login" onPress={() => navigation.navigate("Login")} icon="log-in-outline" />
-            <CButton title="Cadastrar" onPress={() => navigation.navigate("Register")} />
+            <CButton title="Cadastrar" onPress={() => navigation.navigate("Cadastro")} />
             </View>  
            
         </Container>
