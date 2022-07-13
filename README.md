@@ -1,7 +1,7 @@
 <h1 align="center">
   BIDS
   <p><img src="assets/logoBids.png" width="350" heigth="auto"></p>
-  Um app para auxiliar você a cuidar da saúde do seu pet
+    Auxiliando você a cuidar da saúde do seu pet
 </h1>
 
 <p>
