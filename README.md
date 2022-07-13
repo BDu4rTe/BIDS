@@ -23,13 +23,13 @@ Para desenvolver o app foi usado o conjunto básico de ferramentas no desenvolvi
 # 📷 》Imagens do MVP
 
 <p align="center">
-  <img src="assets/mvpWelcome.jpeg" width="300" heigth="auto">
-  <img src="assets/mvpCadastro.jpeg" width="300" heigth="auto">
-  <img src="assets/mvpLogin.jpeg" width="300" heigth="auto">
-  <img src="assets/mvpHome.jpeg" width="300" heigth="auto">
-  <img src="assets/mvpCamera.jpeg" width="300" heigth="auto">
-  <img src="assets/mvpProfile.jpeg" width="300" heigth="auto">
+  <img src="assets/mvpWelcome.jpeg" width="250" heigth="auto">
+  <img src="assets/mvpCadastro.jpeg" width="250" heigth="auto">
+  <img src="assets/mvpLogin.jpeg" width="250" heigth="auto">
+  <img src="assets/mvpHome.jpeg" width="250" heigth="auto">
+  <img src="assets/mvpCamera.jpeg" width="250" heigth="auto">
+  <img src="assets/mvpProfile.jpeg" width="250" heigth="auto">
 </p>
 <p align="center">
-<img src="assets/mvpAdicionar.jpeg" width="300" heigth="auto">
+<img src="assets/mvpAdicionar.jpeg" width="250" heigth="auto">
 </p>
